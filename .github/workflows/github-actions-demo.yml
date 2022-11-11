@@ -1,13 +1,13 @@
 name: Test Vlad Actions
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-	pull_request:
-		types:
-		- closed
+  pull_request:
+  types:
+    - closed
 
 jobs:
-	if_merged:
-		if: github.event.pull_request.merged == true
+if_merged:
+if: github.event.pull_request.merged == true
     Explore-GitHub-Actions:
       runs-on: ubuntu-latest
       steps:
